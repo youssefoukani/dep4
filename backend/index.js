@@ -6,7 +6,7 @@ const authRoutes = require('./routes/authRoutes');
 const dotenv=require('dotenv/config');
 
 app.use(cors({
-    origin: ["https://dep4-backend.vercel.app/"],
+    origin: [""],
     methods: ["GET", "POST"],
     credentials: true
 }))
