@@ -5,7 +5,11 @@ const mongoose=require('mongoose')
 const authRoutes = require('./routes/authRoutes');
 const dotenv=require('dotenv/config');
 
-app.use(cors())
+app.use(cors({
+    origin: ["http://localhost:5173"],
+    methods: ["GET", "POST"],
+    credentials: true
+}))
 
 app.use(express.json())
 
